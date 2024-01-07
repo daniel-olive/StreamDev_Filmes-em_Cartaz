@@ -1,5 +1,5 @@
 # StreamDev_Filmes-em_Cartaz
-[![NPM](https://img.shields.io/npm/l/react)]([https://github.com/devsuperior/sds1-wmazoni/blob/master/LICENSE](https://github.com/daniel-olive/StreamDev_Filmes-em_Cartaz/blob/main/LICENSE)) 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/daniel-olive/StreamDev_Filmes-em_Cartaz/blob/main/LICENSE) 
 
 ### Visualizar o projeto <a href="https://daniel-olive-dev.com.br/subdominios/filmes/index.html">aqui</a>
 

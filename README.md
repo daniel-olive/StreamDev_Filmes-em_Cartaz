@@ -40,4 +40,4 @@ Para utilizar este projeto:
 
 ## Autor
 
-Este projeto foi desenvolvido por [Daniel Oliveira] como parte de um exercício ou projeto pessoal.
+Este projeto foi desenvolvido por **Daniel Oliveira** como parte de um exercício ou projeto pessoal.

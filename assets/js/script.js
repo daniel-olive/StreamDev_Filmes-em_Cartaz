@@ -1,5 +1,6 @@
 // Seleciona a área onde a lista de filmes será exibida no HTML
 const areaLista = document.querySelector('#areaFilmes');
+const container = document.querySelector('.container');
 
 // Seleciona o elemento de load na página HTML
 let load = document.querySelector('.c-loader');
@@ -17,6 +18,7 @@ async function requestFilmes() {
         const imagem = document.createElement('img');
         const li = document.createElement('li');
         const p = document.createElement('p');
+        imagem.classList.add('img-filmes');
 
         // Define a altura da imagem dos filmes
         imagem.style.height = '270px';
@@ -33,6 +35,7 @@ async function requestFilmes() {
 
         // Exibe ou esconde o elemento de load com base na quantidade de filmes carregados
         json.length > 0 ? load.style.display = 'none' : load.style.display = 'block';
+        json.length > 0 ? container.style.opacity = '1' : container.style.opacity = '0';
     });
 
     // Seleciona o elemento de filtro por título de filme

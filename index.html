@@ -1,44 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>SteamDev</title>
-</head>
-<body>
-    <div class="c-loader"></div>
-    <header class="header">
-        <h4>StreamDev</h4>
-    </header>
-    <input type="text" name="" id="pesquisa" placeholder="Pesquise um filme do streamDev">
-    <div id="qtFilmes">
-        <span class="qtFilmesTitulo">Total de filmes: 0</span>
-    </div>
-    <div class="container">
-        <ul id="areaFilmes" class="corpo">
-        </ul>
-        <hr>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, user-scalable=no"
+        />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <title>SteamDev</title>
+    </head>
+    <body>
+        <div class="c-loader"></div>
+        <header class="header">
+            <h4>StreamDev</h4>
+        </header>
+        <input
+            type="text"
+            name=""
+            id="pesquisa"
+            placeholder="Pesquise um filme do streamDev"
+        />
+        <div id="qtFilmes">
+            <span class="qtFilmesTitulo"></span>
+        </div>
+        <div class="container">
+            <ul id="areaFilmes" class="cardsFilms"></ul>
+        </div>
         <footer class="footer">
-            <div class="cop">© 2024 Daniel Oliveira. Todos os direitos reservados.</div>
+            <div class="cop">
+                © 2024 Daniel Oliveira. Todos os direitos reservados.
+            </div>
             <div class="dev">Desenvolvido por Daniel Oliveira</div>
             <div class="social">
-                <a target="_blank"
-                   href="https://api.whatsapp.com/send?phone=5579998382048&text=Estou aqui para ajudar. Se precisar de orientação ou tiver alguma dúvida, estou à disposição para tornar sua ideia mais incrível!">
-                    <img class="icon-social" src="./assets/images/whatsapp-logo.svg" alt="whatsapp">
+                <a
+                    target="_blank"
+                    href="https://api.whatsapp.com/send?phone=5579998382048&text=Estou aqui para ajudar. Se precisar de orientação ou tiver alguma dúvida, estou à disposição para tornar sua ideia mais incrível!"
+                >
+                    <img
+                        class="icon-social"
+                        src="./assets/images/whatsapp-logo.svg"
+                        alt="whatsapp"
+                    />
                 </a>
                 <a href="https://www.instagram.com/danieloliveiradell/">
-                    <img class="icon-social" src="./assets/images/instagram-logo.svg" alt="instagram">
+                    <img
+                        class="icon-social"
+                        src="./assets/images/instagram-logo.svg"
+                        alt="instagram"
+                    />
                 </a>
                 <a href="https://github.com/daniel-olive">
-                    <img class="icon-social" src="./assets/images/github-logo.svg" alt="github">
+                    <img
+                        class="icon-social"
+                        src="./assets/images/github-logo.svg"
+                        alt="github"
+                    />
                 </a>
                 <a target="_blank" href="https://daniel-olive-dev.com.br/">
-                    <img class="icon-social" src="./assets/images/globe.svg" alt="site">
+                    <img
+                        class="icon-social"
+                        src="./assets/images/globe.svg"
+                        alt="site"
+                    />
                 </a>
             </div>
         </footer>
-    </div>
-    <script src="./assets/js/script.js"></script>
-</body>
+        <script src="./assets/js/dataFilms.js"></script>
+        <script src="./assets/js/script.js"></script>
+    </body>
 </html>

@@ -1,221 +1,241 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
 * {
-	margin: 0;
-	padding: 0;
-	font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif, Arial, Helvetica;
+    
 }
 @font-face {
-	/* 
+    /* 
     opentype (otf)
     truetype (ttf)
     embedded (opentype)
     truetype-aat (apple advanced Typography)
     */
-	font-family: 'LondonTwo';
-	src: url('/assets/fonts/london_between/LondonTwo.ttf') format('truetype');
+    font-family: "LondonTwo";
+    src: url("/assets/fonts/london_between/LondonTwo.ttf") format("truetype");
 }
 :root {
-	--color-white: #fff;
-	--color-black: #000;
-	--font-openSans: 'Open Sans';
-	--color-red: #f00;
-	--color-cards: #1e1a28;
+    --color-white: #fff;
+    --color-black: #000;
+    --font-openSans: "Open Sans";
+    --color-red: #f00;
+    --color-cards: #1e1a28;
 }
 body {
-	background-color: var(--color-black);
+    background-color: var(--color-black);
 }
 .container {
-	opacity: 0;
+    display: grid;
+	justify-content: center;
+    grid-template-columns: auto;
+}
+.img-filmes{
+	display: flex;
+	height: 100% !important;
+	width: 90%;
+	margin-top: 10px;
 }
 .c-loader {
-	display: flex;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	animation: is-rotating 1s infinite;
-	border: 6px solid #e5e5e5;
-	border-radius: 50%;
-	border-top-color: var(--color-red);
-	height: 50px;
-	width: 50px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: is-rotating 1s infinite;
+    border: 6px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: var(--color-red);
+    height: 50px;
+    width: 50px;
 }
 
 @keyframes is-rotating {
-	to {
-		transform: rotate(1turn);
-	}
+    to {
+        transform: rotate(1turn);
+    }
 }
 .header {
-	padding: 10px 0px 0px;
-	margin-bottom: 20px;
-	background-color: var(--color-red);
-	height: 40px;
+    padding: 10px 0px 0px;
+    margin-bottom: 20px;
+    background-color: var(--color-red);
+    height: 40px;
 }
 h4 {
-	color: var(--color-white);
-	font-size: 1.5rem;
-	text-align: center;
-	font-family: LondonTwo, Arial, Helvetica, sans-serif;
+    color: var(--color-white);
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: LondonTwo, Arial, Helvetica, sans-serif;
 }
 #qtFilmes {
-	color: var(--color-white);
-	margin: 20px 0px 0px 20px;
+    color: var(--color-white);
+    margin: 20px 0px 0px 20px;
 }
 input {
-	display: flex;
-	margin: auto;
-	height: 20px;
-	padding: 10px;
-	width: 50%;
-	outline: none;
-	border-radius: 10px;
-	border: none;
-	color: var(--color-red);
-	font-size: 1rem;
-	font-weight: 700;
+    display: flex;
+    margin: auto;
+    height: 20px;
+    padding: 10px;
+    width: 50%;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    color: var(--color-red);
+    font-size: 1rem;
+    font-weight: 700;
 }
 li {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	list-style: none;
-	border: 1px solid #000;
-	background-color: var(--color-cards);
-	text-align: center;
-	font-size: 0.9rem;
-	font-weight: 700;
-	padding: 0;
-	cursor: pointer;
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border: 1px solid #000;
+    background-color: var(--color-cards);
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0;
+    cursor: pointer;
 }
 li:hover {
-	opacity: 0.3;
+    opacity: 0.3;
 }
 p {
-	padding: 10px 10px 10px;
-	color: var(--color-white);
+    padding: 10px 10px 10px;
+    color: var(--color-white);
 }
-.corpo {
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	gap: 10px;
-	margin: 20px 20px 150px;
+.cardsFilms {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin: 20px 20px 150px;
 }
 hr {
-	border: 1px solid var(--color-cards);
-	margin: 0px 40px 40px;
+    border: 1px solid var(--color-cards);
+    margin: 0px 40px 40px;
 }
 .footer {
-	display: grid;
-	bottom: 20%;
-	grid-template-columns: 1fr;
-	justify-content: center;
-	align-items: center;
-	gap: 20px;
+    display: grid;
+    bottom: 20%;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 .social,
 .icon-social {
-	display: flex;
-	justify-content: center;
-	margin: 10px 20px 40px;
-	padding: 10px;
-	border-radius: 10px;
-	color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    margin: 10px 20px 40px;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--color-white);
 }
 img:hover {
-	background-color: var(--color-cards);
+    background-color: var(--color-cards);
 }
 .cop,
 .dev {
-	text-align: center;
-	color: var(--color-white);
+    text-align: center;
+    color: var(--color-white);
 }
 /* 640x480 800x600 1024x768 1366x768 1280x1024 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-	.corpo {
-		display: grid;
-		grid-template-columns: auto;
-		grid-template-rows: auto;
-		justify-content: center;
-	}
-	input {
-		width: 80%;
-		font-size: 0.9rem;
-	}
-	.img-filmes {
-		height: auto !important;
-		width: 100% !important;
-	}
-	.cop,
-	.dev {
-		font-size: 0.7rem;
-	}
-	.social,
-	.icon-social {
-		margin: 10px 10px 10px;
-		padding: 0px;
-		border-radius: 10px;
-	}
-	.c-loader {
-		display: flex;
-		position: absolute;
-		top: 50%;
-		left: 43%;
-	}
+    /*Telas Celulares*/
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+    .cardsFilms {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+    .img-filmes {
+        height: 100% !important;
+        width: 90%;
+    }
+    input {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+    .cop,
+    .dev {
+        font-size: 0.7rem;
+    }
+    .social,
+    .icon-social {
+        margin: 10px 10px 10px;
+        padding: 0px;
+        border-radius: 10px;
+    }
+    .c-loader {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 43%;
+    }
 }
-@media (min-width: 481px) and (max-width: 768px) {
-	.corpo {
-		grid-template-columns: repeat(3, 1fr);
-	}
-	input {
-		width: 80%;
-		font-size: 0.8rem;
-	}
-	.img-filmes {
-		height: auto !important;
-		width: 100% !important;
-	}
-	.cop,
-	.dev {
-		font-size: 1rem;
-	}
-	.social,
-	.icon-social {
-		margin: 10px 10px 10px;
-		padding: 10px;
-		border-radius: 10px;
-	}
-	.c-loader {
-		display: flex;
-		position: absolute;
-		top: 50%;
-		left: 43%;
-	}
+@media (min-width: 482px) and (max-width: 840px) {
+    /*Telas Tablets*/
+	.container {
+        display: flex;
+        justify-content: center;
+    }
+    .cardsFilms {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        justify-content: center;
+        width: 100%;
+    }
+    .img-filmes {
+        height: 100% !important;
+        width: 90%;
+    }
+    input {
+        width: 80%;
+        font-size: 0.8rem;
+    }
+    .cop,
+    .dev {
+        font-size: 1rem;
+    }
+    .social,
+    .icon-social {
+        margin: 10px 10px 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .c-loader {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 43%;
+    }
 }
 @media (min-width: 769px) and (max-width: 1279px) {
-	input {
-		width: 50%;
-		font-size: 0.8rem;
-	}
-	.img-filmes {
-		height: auto !important;
-		width: 100% !important;
-	}
-	.corpo {
-		grid-template-columns: repeat(4, 1fr);
-	}
-	.cop,
-	.dev {
-		font-size: 1rem;
-	}
-	.social,
-	.icon-social {
-		margin: 10px 20px 10px;
-		padding: 10px;
-		border-radius: 10px;
-	}
+    /*Telas Computadores*/
+    input {
+        width: 50%;
+        font-size: 0.8rem;
+    }
+    .cop,
+    .dev {
+        font-size: 1rem;
+    }
+    .social,
+    .icon-social {
+        margin: 10px 20px 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
 }

@@ -1,7 +1,7 @@
 # StreamDev_Filmes-em_Cartaz
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/daniel-olive/StreamDev_Filmes-em_Cartaz/blob/main/LICENSE) 
 
-### Visualizar o projeto <a href="https://daniel-olive-dev.com.br/subdominios/filmes/index.html">aqui</a>
+### Visualizar o projeto <a href="https://danieldev.online/subdominios/StreamDev_Filmes-em_Cartaz/index.html">aqui</a>
 
 Uma aplicação simples que consome uma API de filmes e exibe uma lista de filmes, permitindo filtrar por título.
 
